@@ -34,16 +34,18 @@ The train/dev/test splits for GUM/RRG are listed under `data/gum_file_lists` for
 
 ## Experiments
 
+Set ``WANDB_KEY`` in ``dmrst_parser/key.py`` for online wandb support.
+ 
 ### Monolingual Experiments
 
 1. **Train:**
    ```bash  
-   python dmrst_parser/multiple_runs.py --corpus "$CORPUS" --lang "$LANG" --model_type "$TYPE" train
+   python dmrst_parser/multiple_runs.py --corpus "$CORPUS" --lang "$LANG" --model_type "$TYPE" --cuda_device 0 train
    ```
 
 2. **Evaluate:**
    ```bash
-   python dmrst_parser/multiple_runs.py --corpus "$CORPUS" --lang "$LANG" --model_type "$TYPE" evaluate
+   python dmrst_parser/multiple_runs.py --corpus "$CORPUS" --lang "$LANG" --model_type "$TYPE" --cuda_device 0 evaluate
    ```
 
 ### Bilingual Experiments

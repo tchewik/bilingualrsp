@@ -7,6 +7,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import fire
+import nltk
 from tqdm import tqdm
 
 from dmrst_parser.src.corpus.binary_tree import BinaryTree
@@ -15,6 +16,7 @@ from dmrst_parser.src.parser.data import Data
 from dmrst_parser.src.parser.data import RelationTableGUM, RelationTableRSTDT, RelationTableRuRSTB
 
 random.seed(42)
+nltk.download('punkt')
 
 
 class ParserInput:
@@ -52,6 +54,7 @@ class DataManager:
     def _init_gum_corpus(self, cross_validation, nfolds):
         self.input_path = 'data/gum_rs3'
         self.output_path = Path('data/gum_prepared')
+        print(f'{self.input_path = }, {self.output_path = }')
         self.output_path.mkdir(parents=True, exist_ok=True)
         self.cross_validation = cross_validation
         if self.cross_validation:
