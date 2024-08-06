@@ -34,7 +34,7 @@ The train/dev/test splits for GUM/RRG are listed under `data/gum_file_lists` for
 
 ## Experiments
 
-Set ``WANDB_KEY`` in ``dmrst_parser/key.py`` for online wandb support.
+Set ``WANDB_KEY`` in ``dmrst_parser/keys.py`` for online wandb support.
  
 ### Monolingual Experiments
 
