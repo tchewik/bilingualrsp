@@ -1,0 +1,1 @@
+The scripts in this directory are based on the rhetorical relation classifier for Russian from the [IsaNLP RST parser](https://github.com/tchewik/isanlp_rst).
