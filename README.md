@@ -2,6 +2,10 @@
 
 This repository contains the official code and data for the ACL 2024 Findings paper [Bilingual Rhetorical Structure Parsing with Large Parallel Annotations](https://aclanthology.org/2024.findings-acl.577/).
 
+## Trained Models
+
+This repository focuses on data and experiments. For applying the trained parsers, visit the [IsaNLP RST repository](https://github.com/tchewik/isanlp_rst) for models and usage instructions.
+
 ## Data
 
 The data directory structure should be as follows:
@@ -67,8 +71,4 @@ Set ``WANDB_KEY`` in ``dmrst_parser/keys.py`` for online wandb support.
 - `CORPUS`: `RST-DT`, `GUM` (RRG with `lang=ru`), `RuRSTB` (RRT)
 - `TYPE`: `default`, `+tony`, `+tony+bilstm_edus`
 
-
-## Trained Models
-
-This repository focuses on data and experiments. For applying the trained parsers, visit the [IsaNLP RST repository](https://github.com/tchewik/isanlp_rst) for models and usage instructions.
 
