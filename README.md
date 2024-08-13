@@ -1,6 +1,6 @@
 # Bilingual Rhetorical Structure Parsing
 
-This repository contains the official code and data for the ACL 2024 Findings paper "Bilingual Rhetorical Structure Parsing with Large Parallel Annotations".
+This repository contains the official code and data for the ACL 2024 Findings paper [Bilingual Rhetorical Structure Parsing with Large Parallel Annotations](https://aclanthology.org/2024.findings-acl.577/).
 
 ## Data
 
